@@ -702,6 +702,11 @@ Logic.registerPanel(P_CONTAINERS_LIST, {
         Logic.showPanel(MANAGE_CONTAINERS_PICKER);
       }
     });
+    Utils.addEnterHandler(document.querySelector("#info-icon"), (e) => {
+      if (!e.target.classList.contains("disable-edit-containers")) {
+        Logic.showPanel(MANAGE_CONTAINERS_PICKER);
+      }
+    });
     Utils.addEnterHandler(document.querySelector("#open-new-tab-in"), () => {
       Logic.showPanel(OPEN_NEW_CONTAINER_PICKER);
     });
@@ -756,6 +761,7 @@ Logic.registerPanel(P_CONTAINERS_LIST, {
       });
     }
 
+    /*
     // Badge Options icon if both nativeMessaging and/or proxy permissions are disabled
     const bothMozillaVpnPermissionsEnabled = await MozillaVPN.bothPermissionsEnabled();
     const warningDotShouldBeHidden = mozillaVpnHiddenToutsList.find(tout => tout.name === mozillaVpnPermissionsWarningDotName);
@@ -774,6 +780,7 @@ Logic.registerPanel(P_CONTAINERS_LIST, {
       }
       await browser.storage.local.set({ mozillaVpnHiddenToutsList });
     });
+    */
   },
 
   unregister() {

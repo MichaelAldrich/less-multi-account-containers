@@ -1,3 +1,10 @@
+# Less Multi-Account Containers
+
+It's a small fork of [Firefox Multi-Account Containers](https://github.com/mozilla/multi-account-containers) that has less UI.
+
+On the left is the old one, on the right is mine. Everything after the screenshot is from upstream.
+![compare](./compare.png)
+
 # Multi-Account Containers
 
 [![Test](https://github.com/mozilla/multi-account-containers/actions/workflows/test.yaml/badge.svg)](https://github.com/mozilla/multi-account-containers/actions/workflows/test.yaml)
